@@ -1,0 +1,166 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX era: <http://data.europa.eu/949/>
+PREFIX ctry: <http://publications.europa.eu/resource/authority/country/>
+
+CONSTRUCT {
+  ?infrastructureObject a ?type .
+  ?infrastructureObject era:hasAbstraction ?abstraction .
+  ?infrastructureObject era:imCode ?im .
+  ?infrastructureObject era:lineReference ?lineReference .
+  ?infrastructureObject era:validityEndDate ?valEndDate .
+  ?infrastructureObject era:canonicalURI ?canonicalURI .
+  ?infrastructureObject era:validityStartDate ?valStartDate .
+  #OperationalPoint
+  ?infrastructureObject era:digitalSchematicOverview ?digitalSchematicOverview .
+  ?infrastructureObject era:opName ?opName .
+  ?infrastructureObject era:tafTAPCode ?tafTAPCode .
+  ?infrastructureObject era:schematicOverviewOP ?schematicOverviewOP .
+  ?infrastructureObject era:hasSchematicOverviewOPDigitalForm ?hasSchematicOverviewOPDigitalForm .
+  ?infrastructureObject era:siding ?siding .
+  ?infrastructureObject era:opType ?opType .
+  ?infrastructureObject era:opTypeGaugeChangeover ?opTypeGaugeChangeover .
+  ?infrastructureObject era:uopid ?uopid .
+  #SectionOfLine
+  ?infrastructureObject era:lengthOfSectionOfLine ?lengthOfSectionOfLine .
+  ?infrastructureObject era:solNature ?solNature .
+  ?infrastructureObject era:opEnd ?opEnd .
+  ?infrastructureObject era:opStart ?opStart .
+  ?infrastructureObject era:lineNationalId ?lineNationalId .
+  #Tunnel
+  ?infrastructureObject era:verificationSRT ?verificationSRT .
+  ?infrastructureObject era:demonstrationSRT ?demonstrationSRT .
+  ?infrastructureObject era:lineReferenceTunnelEnd ?lineReferenceTunnelEnd .
+  ?infrastructureObject era:tunnelKilometerEnd ?tunnelKilometerEnd .
+  ?infrastructureObject era:endLocation ?endLocation .
+  ?infrastructureObject era:hasEmergencyPlan ?hasEmergencyPlan .
+  ?infrastructureObject era:hasEvacuationAndRescuePoints ?hasEvacuationAndRescuePoints .
+  ?infrastructureObject era:hasWalkway ?hasWalkway .
+  ?infrastructureObject era:rollingStockFireCategory ?rollingStockFireCategory .
+  ?infrastructureObject era:lengthOfTunnel ?lengthOfTunnel .
+  ?infrastructureObject era:nationalRollingStockFireCategory ?nationalRollingStockFireCategory .
+  ?infrastructureObject era:specialTunnelArea ?specialTunnelArea .
+  ?infrastructureObject era:lineReferenceTunnelStart ?lineReferenceTunnelStart .
+  ?infrastructureObject era:tunnelKilometerStart ?tunnelKilometerStart .
+  ?infrastructureObject era:startLocation ?startLocation .
+  ?infrastructureObject era:tunnelIdentification ?tunnelIdentification .
+  ?infrastructureObject era:complianceInfTsi ?complianceInfTsi .
+  ?infrastructureObject era:crossSectionArea ?crossSectionArea .
+  ?infrastructureObject era:dieselThermalAllowed ?dieselThermalAllowed .
+  ?infrastructureObject era:tunnelDocRef ?tunnelDocRef .
+  ?infrastructureObject era:track ?track .
+  ?siding a era:Siding.
+  ?siding era:hasElectricShoreSupply ?hasElectricShoreSupply .
+  ?siding era:hasExternalCleaning ?hasExternalCleaning .
+  ?siding era:hasRefuelling ?hasRefuelling .
+  ?siding era:hasSandRestocking ?hasSandRestocking .
+  ?siding era:hasToiletDischarge ?hasToiletDischarge .
+  ?siding era:hasWaterRestocking ?hasWaterRestocking .
+  ?siding era:gradient ?gradient .
+  ?siding era:sidingId ?sidingId .
+  ?siding era:minimumVerticalRadius ?minimumVerticalRadius .
+  ?siding era:minimumVerticalRadiusCrest ?minimumVerticalRadiusCrest .
+  ?siding era:minimumVerticalRadiusHollow ?minimumVerticalRadiusHollow .
+  ?siding era:lengthOfSiding ?lengthOfSiding .
+  ?siding era:validityStartDate ?sidingValStartDate .
+  ?siding era:validityEndDate ?sidingValEndDate .
+  ?siding era:imCode ?imSiding .
+  ?siding era:tenClassification ?tenClassificationSiding .
+  ?track era:platformEdge ?platformEdge .
+  ?platformEdge a era:PlatformEdge.
+  ?platformEdge era:hasPlatformCurvature ?hasPlatformCurvature .
+  ?platformEdge era:assistanceStartingTrain ?assistanceStartingTrain .
+  ?platformEdge era:platformHeight ?platformHeight .
+  ?platformEdge era:platformId ?platformId .
+  ?platformEdge era:areaBoardingAid ?areaBoardingAid .
+  ?platformEdge era:lengthOfPlatform ?lengthOfPlatform .
+  ?platformEdge era:imCode ?imPE .
+  ?platformEdge era:tenClassification ?tenClassificationPlatformEdge .
+  ?track a era:Track.
+  ?track era:bridge ?bridge .
+  ?track era:trackDirection ?trackDirection .
+  ?track era:trackId ?trackId .
+}
+WHERE {
+  ?infrastructureObject a ?type .
+  ?type rdfs:subClassOf* era:InfrastructureObject .
+  ?infrastructureObject era:inCountry ctry:LUX .
+  OPTIONAL { ?infrastructureObject era:hasAbstraction ?abstraction . }
+  OPTIONAL { ?infrastructureObject era:imCode ?im . }
+  OPTIONAL { ?infrastructureObject era:lineReference ?lineReference . }
+  OPTIONAL { ?infrastructureObject era:canonicalURI ?canonicalURI . }
+  OPTIONAL { ?infrastructureObject era:validityEndDate ?valEndDate . }  
+  OPTIONAL { ?infrastructureObject era:validityStartDate ?valStartDate . }  
+  #OperationalPoint
+  OPTIONAL { ?infrastructureObject era:digitalSchematicOverview ?digitalSchematicOverview . }
+  OPTIONAL { ?infrastructureObject era:opName ?opName . }
+  OPTIONAL { ?infrastructureObject era:tafTAPCode ?tafTAPCode . }
+  OPTIONAL { ?infrastructureObject era:schematicOverviewOP ?schematicOverviewOP . }
+  OPTIONAL { ?infrastructureObject era:hasSchematicOverviewOPDigitalForm ?hasSchematicOverviewOPDigitalForm . }  
+  OPTIONAL { ?infrastructureObject era:opType ?opType . }
+  OPTIONAL { ?infrastructureObject era:opTypeGaugeChangeover ?opTypeGaugeChangeover . }
+  OPTIONAL { ?infrastructureObject era:uopid ?uopid . }
+  #SectionOfLine
+  OPTIONAL { ?infrastructureObject era:lengthOfSectionOfLine ?lengthOfSectionOfLine . }
+  OPTIONAL { ?infrastructureObject era:solNature ?solNature . }
+  OPTIONAL { ?infrastructureObject era:opEnd ?opEnd . }
+  OPTIONAL { ?infrastructureObject era:opStart ?opStart . }
+  OPTIONAL { ?infrastructureObject era:lineNationalId ?lineNationalId . }  
+  #Tunnel
+  OPTIONAL { ?infrastructureObject era:verificationSRT ?verificationSRT . }
+  OPTIONAL { ?infrastructureObject era:demonstrationSRT ?demonstrationSRT . }
+  OPTIONAL { ?infrastructureObject era:lineReferenceTunnelEnd ?lineReferenceTunnelEnd . }
+  OPTIONAL { ?infrastructureObject era:tunnelKilometerEnd ?tunnelKilometerEnd . }
+  OPTIONAL { ?infrastructureObject era:endLocation ?endLocation . }
+  OPTIONAL { ?infrastructureObject era:hasEmergencyPlan ?hasEmergencyPlan . }
+  OPTIONAL { ?infrastructureObject era:hasEvacuationAndRescuePoints ?hasEvacuationAndRescuePoints . }
+  OPTIONAL { ?infrastructureObject era:hasWalkway ?hasWalkway . }
+  OPTIONAL { ?infrastructureObject era:rollingStockFireCategory ?rollingStockFireCategory . }
+  OPTIONAL { ?infrastructureObject era:lengthOfTunnel ?lengthOfTunnel . }
+  OPTIONAL { ?infrastructureObject era:nationalRollingStockFireCategory ?nationalRollingStockFireCategory . }
+  OPTIONAL { ?infrastructureObject era:specialTunnelArea ?specialTunnelArea . }
+  OPTIONAL { ?infrastructureObject era:lineReferenceTunnelStart ?lineReferenceTunnelStart . }
+  OPTIONAL { ?infrastructureObject era:tunnelKilometerStart ?tunnelKilometerStart . }
+  OPTIONAL { ?infrastructureObject era:startLocation ?startLocation . }
+  OPTIONAL { ?infrastructureObject era:tunnelIdentification ?tunnelIdentification . }
+  OPTIONAL { ?infrastructureObject era:complianceInfTsi ?complianceInfTsi . }
+  OPTIONAL { ?infrastructureObject era:crossSectionArea ?crossSectionArea . }
+  OPTIONAL { ?infrastructureObject era:dieselThermalAllowed ?dieselThermalAllowed . }
+  OPTIONAL { ?infrastructureObject era:tunnelDocRef ?tunnelDocRef . }
+  #Track
+  OPTIONAL { ?infrastructureObject era:track ?track . 
+    OPTIONAL { ?track era:bridge ?bridge . }
+    OPTIONAL { ?track era:trackDirection ?trackDirection . }
+    OPTIONAL { ?track era:trackId ?trackId . }
+    #PlatformEdge
+    OPTIONAL { ?track era:platformEdge ?platformEdge . 
+      OPTIONAL { ?platformEdge era:hasPlatformCurvature ?hasPlatformCurvature . }
+      OPTIONAL { ?platformEdge era:assistanceStartingTrain ?assistanceStartingTrain . }
+      OPTIONAL { ?platformEdge era:platformHeight ?platformHeight . }
+      OPTIONAL { ?platformEdge era:platformId ?platformId . }
+      OPTIONAL { ?platformEdge era:areaBoardingAid ?areaBoardingAid . }
+      OPTIONAL { ?platformEdge era:lengthOfPlatform ?lengthOfPlatform . }
+      OPTIONAL { ?platformEdge era:imCode ?imPE . }
+      OPTIONAL { ?platformEdge era:tenClassification ?tenClassificationPlatformEdge . }
+    }
+  }
+  #Siding
+  OPTIONAL { ?infrastructureObject era:siding ?siding . 
+    OPTIONAL { ?siding era:hasElectricShoreSupply ?hasElectricShoreSupply . }
+    OPTIONAL { ?siding era:hasExternalCleaning ?hasExternalCleaning . }
+    OPTIONAL { ?siding era:hasRefuelling ?hasRefuelling . }
+    OPTIONAL { ?siding era:hasSandRestocking ?hasSandRestocking . }
+    OPTIONAL { ?siding era:hasToiletDischarge ?hasToiletDischarge . }
+    OPTIONAL { ?siding era:hasWaterRestocking ?hasWaterRestocking . }
+    OPTIONAL { ?siding era:gradient ?gradient . }
+    OPTIONAL { ?siding era:sidingId ?sidingId . }
+    OPTIONAL { ?siding era:minimumVerticalRadius ?minimumVerticalRadius . }
+    OPTIONAL { ?siding era:minimumVerticalRadiusCrest ?minimumVerticalRadiusCrest . }
+    OPTIONAL { ?siding era:minimumVerticalRadiusHollow ?minimumVerticalRadiusHollow . }
+    OPTIONAL { ?siding era:lengthOfSiding ?lengthOfSiding . }
+    OPTIONAL { ?siding era:validityEndDate ?sidingValEndDate . }  
+  	OPTIONAL { ?siding era:validityStartDate ?sidingValStartDate . } 
+    OPTIONAL { ?siding era:imCode ?imSiding . }
+    OPTIONAL { ?siding era:tenClassification ?tenClassificationSiding . }    
+  }
+}

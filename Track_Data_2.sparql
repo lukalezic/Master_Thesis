@@ -1,0 +1,196 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX era: <http://data.europa.eu/949/>
+PREFIX ctry: <http://publications.europa.eu/resource/authority/country/>
+
+CONSTRUCT{
+  ?track era:redLightsRequired ?redLightsRequired .
+  ?track era:etcsOptionalFunctions ?etcsOptionalFunctions .
+  ?track era:documentRestrictionPowerConsumption ?documentRestrictionPowerConsumption .
+  ?track era:voiceRadioCompatible ?voiceRadioCompatible .
+  ?track era:platformEdge ?platformEdge .
+  ?track era:minimumContactWireHeight ?minimumContactWireHeight .
+  ?track era:vNvsupovtrp ?vNvsupovtrp .
+  ?track era:etcsImplementsLevelCrossingProcedure ?etcsImplementsLevelCrossingProcedure .
+  ?track era:gaugingTransversalDocument ?gaugingTransversalDocument .
+  ?track era:distSignToPhaseEnd ?distSignToPhaseEnd .
+  ?track era:etcsInfillLineAccess ?etcsInfillLineAccess .
+  ?track era:atoGradeAutomation ?atoGradeAutomation .
+  ?track era:mNvcontact ?mNvcontact .
+  ?track era:gaugingCheckLocation ?gaugingCheckLocation .
+  ?track era:etcsInfill ?etcsInfill .
+  ?track era:lineCategory ?lineCategory .
+  ?track era:hotAxleBoxDetectorGeneration ?hotAxleBoxDetectorGeneration .
+  ?track era:legacyRadioSystem ?legacyRadioSystem .
+  ?track era:gsmrNetworkCoverage ?gsmrNetworkCoverage .
+  ?track era:tiltingSupported ?tiltingSupported .
+  ?track era:compatibilityProcedureDocument ?compatibilityProcedureDocument .
+  ?track era:trackPhaseInfo ?trackPhaseInfo .
+  ?track era:hasSevereWeatherConditions ?hasSevereWeatherConditions .
+  ?track era:flangeLubeForbidden ?flangeLubeForbidden .
+  ?track era:mNvderun ?mNvderun .
+  ?track era:additionalBrakingInformationDocument ?additionalBrakingInformationDocument .
+  ?track era:maximumBrakingDistance101 ?maximumBrakingDistance101 .
+  ?track era:tsiSwitchCrossing ?tsiSwitchCrossing .
+  ?track era:usesGroup555 ?usesGroup555 .
+  ?track era:standardCombinedTransportContainers ?standardCombinedTransportContainers .
+  ?track era:instructionsSwitchRadioSystems ?instructionsSwitchRadioSystems .
+  ?track era:atoCommunicationSystem ?atoCommunicationSystem .
+  ?track era:otherPantographHead ?otherPantographHead .
+  ?track era:radioNetworkId ?radioNetworkId .
+  ?track era:contactLineSystem ?contactLineSystem .
+  ?track era:hasBallast ?hasBallast .
+  ?track era:trainIntegrityOnBoardRequired ?trainIntegrityOnBoardRequired .
+  ?track era:otherTrainProtection ?otherTrainProtection .
+  ?track era:gprsImplementationArea ?gprsImplementationArea .
+  ?track era:magneticBrakingConditionsDocument ?magneticBrakingConditionsDocument .
+  ?track era:maximumTemperature ?maximumTemperature .
+  ?track era:hotAxleBoxDetectorDirection ?hotAxleBoxDetectorDirection .
+  ?track era:ertmsErrorCorrectionsOnBoard ?ertmsErrorCorrectionsOnBoard .
+  ?track era:minFlangeHeight ?minFlangeHeight .
+  ?track era:conditionsSwitchClassBSystems ?conditionsSwitchClassBSystems .
+  ?track era:phaseInfo ?phaseInfo .
+  ?track era:highSpeedLoadModelCompliance ?highSpeedLoadModelCompliance .
+  ?track era:temperatureRange ?temperatureRange .
+  ?track era:etcsDegradedSituation ?etcsDegradedSituation .
+  ?track era:loadCapability ?loadCapability .
+  ?track era:trackLoadCapability ?trackLoadCapability .
+  ?track era:qNvemrrls ?qNvemrrls .
+  ?track era:isQuietRoute ?isQuietRoute .
+  ?track era:cantDeficiency ?cantDeficiency .
+  ?track era:publicNetworkRoaming ?publicNetworkRoaming .
+  ?track era:conditionsSwitchTrainProtectionSystems ?conditionsSwitchTrainProtectionSystems .
+  ?track era:gsmRNoCoverage ?gsmRNoCoverage .
+  ?track era:etcsErrorCorrectionsOnboard ?etcsErrorCorrectionsOnboard .
+  ?track era:etcsSystemFunctionalitiesNextFiveYears ?etcsSystemFunctionalitiesNextFiveYears .
+  ?track era:verificationENE ?verificationENE .
+  ?track era:minDistFirstLastAxle ?minDistFirstLastAxle .
+  ?track era:safeConsistLengthInformationNecessary ?safeConsistLengthInformationNecessary .
+  ?track era:atoErrorCorrectionsOnboard ?atoErrorCorrectionsOnboard .
+  ?track era:qNvdriverAdhes ?qNvdriverAdhes .
+  ?track era:maximumPermittedSpeed ?maximumPermittedSpeed .
+  ?track era:hasAdditionalBrakingInformation ?hasAdditionalBrakingInformation .
+  ?track era:trainDetectionSystem ?trainDetectionSystem .
+  ?track era:eddyCurrentBraking ?eddyCurrentBraking .
+  ?track era:systemSeparationInfo ?systemSeparationInfo .
+  ?track era:passesThroughTunnel ?passesThroughTunnel .
+  ?track era:minimumHorizontalRadius ?minimumHorizontalRadius .
+  ?track era:minimumTemperature ?minimumTemperature .
+  ?track era:trackRaisedPantographsDistanceAndSpeed ?trackRaisedPantographsDistanceAndSpeed .
+  ?track era:etcsNationalPacket44 ?etcsNationalPacket44 .
+  ?track era:reasonsEtcsRadioBlockCenterReject ?reasonsEtcsRadioBlockCenterReject .
+  ?track era:hasLevelCrossings ?hasLevelCrossings .
+  ?track era:gsmRVersion151 ?gsmRVersion151 .
+  ?track era:dNvroll ?dNvroll .
+  ?track era:automaticDroppingDeviceRequired ?automaticDroppingDeviceRequired .
+  ?track era:tNvovtrp ?tNvovtrp .
+  ?track era:minFlangeThickness ?minFlangeThickness .
+  ?track era:maximumAltitude ?maximumAltitude .
+  ?track era:specificInformation ?specificInformation .
+  ?track era:minWheelDiameter ?minWheelDiameter .
+  ?track era:phaseSeparation ?phaseSeparation .
+  ?track era:dNvpotrp ?dNvpotrp .
+  ?track era:verificationINF ?verificationINF .
+  ?track era:etcsMVersion ?etcsMVersion .
+  ?track era:profileNumberSemiTrailers ?profileNumberSemiTrailers .
+  ?track era:otherCantDeficiencyBasicSSP ?otherCantDeficiencyBasicSSP .
+  ?track era:localRulesOrRestrictions ?localRulesOrRestrictions .
+  ?track era:raisedPantographsDistanceAndSpeed ?raisedPantographsDistanceAndSpeed .
+}
+WHERE { 
+  ?track a era:Track.
+  ?obj era:track ?track.
+  ?obj era:inCountry ctry:LUX .
+  OPTIONAL { ?track era:redLightsRequired ?redLightsRequired . }
+  OPTIONAL { ?track era:etcsOptionalFunctions ?etcsOptionalFunctions . }
+  OPTIONAL { ?track era:documentRestrictionPowerConsumption ?documentRestrictionPowerConsumption . }
+  OPTIONAL { ?track era:voiceRadioCompatible ?voiceRadioCompatible . }
+  OPTIONAL { ?track era:platformEdge ?platformEdge . }
+  OPTIONAL { ?track era:minimumContactWireHeight ?minimumContactWireHeight . }
+  OPTIONAL { ?track era:vNvsupovtrp ?vNvsupovtrp . }
+  OPTIONAL { ?track era:etcsImplementsLevelCrossingProcedure ?etcsImplementsLevelCrossingProcedure . }
+  OPTIONAL { ?track era:gaugingTransversalDocument ?gaugingTransversalDocument . }
+  OPTIONAL { ?track era:distSignToPhaseEnd ?distSignToPhaseEnd . }
+  OPTIONAL { ?track era:etcsInfillLineAccess ?etcsInfillLineAccess . }
+  OPTIONAL { ?track era:atoGradeAutomation ?atoGradeAutomation . }
+  OPTIONAL { ?track era:mNvcontact ?mNvcontact . }
+  OPTIONAL { ?track era:gaugingCheckLocation ?gaugingCheckLocation . }
+  OPTIONAL { ?track era:etcsInfill ?etcsInfill . }
+  OPTIONAL { ?track era:lineCategory ?lineCategory . }
+  OPTIONAL { ?track era:hotAxleBoxDetectorGeneration ?hotAxleBoxDetectorGeneration . }
+  OPTIONAL { ?track era:legacyRadioSystem ?legacyRadioSystem . }
+  OPTIONAL { ?track era:gsmrNetworkCoverage ?gsmrNetworkCoverage . }
+  OPTIONAL { ?track era:tiltingSupported ?tiltingSupported . }
+  OPTIONAL { ?track era:compatibilityProcedureDocument ?compatibilityProcedureDocument . }
+  OPTIONAL { ?track era:trackPhaseInfo ?trackPhaseInfo . }
+  OPTIONAL { ?track era:hasSevereWeatherConditions ?hasSevereWeatherConditions . }
+  OPTIONAL { ?track era:flangeLubeForbidden ?flangeLubeForbidden . }
+  OPTIONAL { ?track era:mNvderun ?mNvderun . }
+  OPTIONAL { ?track era:additionalBrakingInformationDocument ?additionalBrakingInformationDocument . }
+  OPTIONAL { ?track era:maximumBrakingDistance101 ?maximumBrakingDistance101 . }
+  OPTIONAL { ?track era:tsiSwitchCrossing ?tsiSwitchCrossing . }
+  OPTIONAL { ?track era:usesGroup555 ?usesGroup555 . }
+  OPTIONAL { ?track era:standardCombinedTransportContainers ?standardCombinedTransportContainers . }
+  OPTIONAL { ?track era:instructionsSwitchRadioSystems ?instructionsSwitchRadioSystems . }
+  OPTIONAL { ?track era:atoCommunicationSystem ?atoCommunicationSystem . }
+  OPTIONAL { ?track era:otherPantographHead ?otherPantographHead . }
+  OPTIONAL { ?track era:radioNetworkId ?radioNetworkId . }
+  OPTIONAL { ?track era:contactLineSystem ?contactLineSystem . }
+  OPTIONAL { ?track era:hasBallast ?hasBallast . }
+  OPTIONAL { ?track era:trainIntegrityOnBoardRequired ?trainIntegrityOnBoardRequired . }
+  OPTIONAL { ?track era:otherTrainProtection ?otherTrainProtection . }
+  OPTIONAL { ?track era:gprsImplementationArea ?gprsImplementationArea . }
+  OPTIONAL { ?track era:magneticBrakingConditionsDocument ?magneticBrakingConditionsDocument . }
+  OPTIONAL { ?track era:maximumTemperature ?maximumTemperature . }
+  OPTIONAL { ?track era:hotAxleBoxDetectorDirection ?hotAxleBoxDetectorDirection . }
+  OPTIONAL { ?track era:ertmsErrorCorrectionsOnBoard ?ertmsErrorCorrectionsOnBoard . }
+  OPTIONAL { ?track era:minFlangeHeight ?minFlangeHeight . }
+  OPTIONAL { ?track era:conditionsSwitchClassBSystems ?conditionsSwitchClassBSystems . }
+  OPTIONAL { ?track era:phaseInfo ?phaseInfo . }
+  OPTIONAL { ?track era:highSpeedLoadModelCompliance ?highSpeedLoadModelCompliance . }
+  OPTIONAL { ?track era:temperatureRange ?temperatureRange . }
+  OPTIONAL { ?track era:etcsDegradedSituation ?etcsDegradedSituation . }
+  OPTIONAL { ?track era:loadCapability ?loadCapability . }
+  OPTIONAL { ?track era:trackLoadCapability ?trackLoadCapability . }
+  OPTIONAL { ?track era:qNvemrrls ?qNvemrrls . }
+  OPTIONAL { ?track era:isQuietRoute ?isQuietRoute . }
+  OPTIONAL { ?track era:cantDeficiency ?cantDeficiency . }
+  OPTIONAL { ?track era:publicNetworkRoaming ?publicNetworkRoaming . }
+  OPTIONAL { ?track era:conditionsSwitchTrainProtectionSystems ?conditionsSwitchTrainProtectionSystems . }
+  OPTIONAL { ?track era:gsmRNoCoverage ?gsmRNoCoverage . }
+  OPTIONAL { ?track era:etcsErrorCorrectionsOnboard ?etcsErrorCorrectionsOnboard . }
+  OPTIONAL { ?track era:etcsSystemFunctionalitiesNextFiveYears ?etcsSystemFunctionalitiesNextFiveYears . }
+  OPTIONAL { ?track era:verificationENE ?verificationENE . }
+  OPTIONAL { ?track era:minDistFirstLastAxle ?minDistFirstLastAxle . }
+  OPTIONAL { ?track era:safeConsistLengthInformationNecessary ?safeConsistLengthInformationNecessary . }
+  OPTIONAL { ?track era:atoErrorCorrectionsOnboard ?atoErrorCorrectionsOnboard . }
+  OPTIONAL { ?track era:qNvdriverAdhes ?qNvdriverAdhes . }
+  OPTIONAL { ?track era:maximumPermittedSpeed ?maximumPermittedSpeed . }
+  OPTIONAL { ?track era:hasAdditionalBrakingInformation ?hasAdditionalBrakingInformation . }
+  OPTIONAL { ?track era:trainDetectionSystem ?trainDetectionSystem . }
+  OPTIONAL { ?track era:eddyCurrentBraking ?eddyCurrentBraking . }
+  OPTIONAL { ?track era:systemSeparationInfo ?systemSeparationInfo . }
+  OPTIONAL { ?track era:passesThroughTunnel ?passesThroughTunnel . }
+  OPTIONAL { ?track era:minimumHorizontalRadius ?minimumHorizontalRadius . }
+  OPTIONAL { ?track era:minimumTemperature ?minimumTemperature . }
+  OPTIONAL { ?track era:trackRaisedPantographsDistanceAndSpeed ?trackRaisedPantographsDistanceAndSpeed . }
+  OPTIONAL { ?track era:etcsNationalPacket44 ?etcsNationalPacket44 . }
+  OPTIONAL { ?track era:reasonsEtcsRadioBlockCenterReject ?reasonsEtcsRadioBlockCenterReject . }
+  OPTIONAL { ?track era:hasLevelCrossings ?hasLevelCrossings . }
+  OPTIONAL { ?track era:gsmRVersion151 ?gsmRVersion151 . }
+  OPTIONAL { ?track era:dNvroll ?dNvroll . }
+  OPTIONAL { ?track era:automaticDroppingDeviceRequired ?automaticDroppingDeviceRequired . }
+  OPTIONAL { ?track era:tNvovtrp ?tNvovtrp . }
+  OPTIONAL { ?track era:minFlangeThickness ?minFlangeThickness . }
+  OPTIONAL { ?track era:maximumAltitude ?maximumAltitude . }
+  OPTIONAL { ?track era:specificInformation ?specificInformation . }
+  OPTIONAL { ?track era:minWheelDiameter ?minWheelDiameter . }
+  OPTIONAL { ?track era:phaseSeparation ?phaseSeparation . }
+  OPTIONAL { ?track era:dNvpotrp ?dNvpotrp . }
+  OPTIONAL { ?track era:verificationINF ?verificationINF . }
+  OPTIONAL { ?track era:etcsMVersion ?etcsMVersion . }
+  OPTIONAL { ?track era:profileNumberSemiTrailers ?profileNumberSemiTrailers . }
+  OPTIONAL { ?track era:otherCantDeficiencyBasicSSP ?otherCantDeficiencyBasicSSP . }
+  OPTIONAL { ?track era:localRulesOrRestrictions ?localRulesOrRestrictions . }
+  OPTIONAL { ?track era:raisedPantographsDistanceAndSpeed ?raisedPantographsDistanceAndSpeed . }
+}
