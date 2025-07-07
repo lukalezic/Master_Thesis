@@ -38,7 +38,6 @@ CONSTRUCT{
   ?track era:atoCommunicationSystem ?atoCommunicationSystem .
   ?track era:otherPantographHead ?otherPantographHead .
   ?track era:radioNetworkId ?radioNetworkId .
-  ?track era:contactLineSystem ?contactLineSystem .
   ?track era:hasBallast ?hasBallast .
   ?track era:trainIntegrityOnBoardRequired ?trainIntegrityOnBoardRequired .
   ?track era:otherTrainProtection ?otherTrainProtection .
@@ -70,7 +69,6 @@ CONSTRUCT{
   ?track era:qNvdriverAdhes ?qNvdriverAdhes .
   ?track era:maximumPermittedSpeed ?maximumPermittedSpeed .
   ?track era:hasAdditionalBrakingInformation ?hasAdditionalBrakingInformation .
-  ?track era:trainDetectionSystem ?trainDetectionSystem .
   ?track era:eddyCurrentBraking ?eddyCurrentBraking .
   ?track era:systemSeparationInfo ?systemSeparationInfo .
   ?track era:passesThroughTunnel ?passesThroughTunnel .
@@ -100,7 +98,7 @@ CONSTRUCT{
 WHERE { 
   ?track a era:Track.
   ?obj era:track ?track.
-  ?obj era:inCountry ctry:LUX .
+  ?obj era:inCountry ctry:@@COUNTRY@@ .
   OPTIONAL { ?track era:redLightsRequired ?redLightsRequired . }
   OPTIONAL { ?track era:etcsOptionalFunctions ?etcsOptionalFunctions . }
   OPTIONAL { ?track era:documentRestrictionPowerConsumption ?documentRestrictionPowerConsumption . }
@@ -135,7 +133,6 @@ WHERE {
   OPTIONAL { ?track era:atoCommunicationSystem ?atoCommunicationSystem . }
   OPTIONAL { ?track era:otherPantographHead ?otherPantographHead . }
   OPTIONAL { ?track era:radioNetworkId ?radioNetworkId . }
-  OPTIONAL { ?track era:contactLineSystem ?contactLineSystem . }
   OPTIONAL { ?track era:hasBallast ?hasBallast . }
   OPTIONAL { ?track era:trainIntegrityOnBoardRequired ?trainIntegrityOnBoardRequired . }
   OPTIONAL { ?track era:otherTrainProtection ?otherTrainProtection . }
@@ -167,7 +164,6 @@ WHERE {
   OPTIONAL { ?track era:qNvdriverAdhes ?qNvdriverAdhes . }
   OPTIONAL { ?track era:maximumPermittedSpeed ?maximumPermittedSpeed . }
   OPTIONAL { ?track era:hasAdditionalBrakingInformation ?hasAdditionalBrakingInformation . }
-  OPTIONAL { ?track era:trainDetectionSystem ?trainDetectionSystem . }
   OPTIONAL { ?track era:eddyCurrentBraking ?eddyCurrentBraking . }
   OPTIONAL { ?track era:systemSeparationInfo ?systemSeparationInfo . }
   OPTIONAL { ?track era:passesThroughTunnel ?passesThroughTunnel . }

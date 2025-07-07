@@ -1,0 +1,84 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX era: <http://data.europa.eu/949/>
+PREFIX ctry: <http://publications.europa.eu/resource/authority/country/>
+
+CONSTRUCT{
+  ?track era:contactLineSystem ?contactLineSystem .
+  ?contactLineSystem a era:ContactLineSystem.
+  ?contactLineSystem era:conditionsAppliedRegenerativeBraking ?conditionsAppliedRegenerativeBraking .
+  ?contactLineSystem era:currentLimitationRequired ?currentLimitationRequired .
+  ?contactLineSystem era:energySupplySystemTSICompliant ?energySupplySystemTSICompliant .
+  ?contactLineSystem era:maxTrainCurrent ?maxTrainCurrent .
+  ?contactLineSystem era:permissionChargingElectricEnergyTractionStandstill ?permissionChargingElectricEnergyTractionStandstill .
+  ?contactLineSystem era:conditionalRegenerativeBrake ?conditionalRegenerativeBrake .
+  ?contactLineSystem era:conditionsChargingElectricEnergyStorage ?conditionsChargingElectricEnergyStorage .
+  ?contactLineSystem era:contactLineSystemType ?contactLineSystemType .
+  ?contactLineSystem era:umax2 ?umax2 .
+  ?track era:trainDetectionSystem ?trainDetectionSystem .
+  ?trainDetectionSystem a era:TrainDetectionSystem.
+  ?trainDetectionSystem era:trainDetectionSystemSpecificCheckDocument ?trainDetectionSystemSpecificCheckDocument .
+  ?trainDetectionSystem era:flangeLubeRules ?flangeLubeRules .
+  ?trainDetectionSystem era:frequencyBandsForDetection ?frequencyBandsForDetection .
+  ?trainDetectionSystem era:maxSandingOutput ?maxSandingOutput .
+  ?trainDetectionSystem era:maxDistEndTrainFirstAxle ?maxDistEndTrainFirstAxle .
+  ?trainDetectionSystem era:maximumInterferenceCurrent ?maximumInterferenceCurrent .
+  ?trainDetectionSystem era:tdsMaximumMagneticField ?tdsMaximumMagneticField .
+  ?trainDetectionSystem era:requiredSandingOverride ?requiredSandingOverride .
+  ?trainDetectionSystem era:frenchTrainDetectionSystemLimitation ?frenchTrainDetectionSystemLimitation .
+  ?trainDetectionSystem era:tdsFrenchTrainDetectionSystemLimitation ?tdsFrenchTrainDetectionSystemLimitation .
+  ?trainDetectionSystem era:tsiCompliantSandCharacteristics ?tsiCompliantSandCharacteristics .
+  ?trainDetectionSystem era:tsiCompliantFerromagneticWheel ?tsiCompliantFerromagneticWheel .
+  ?trainDetectionSystem era:tsiCompliantMaxDistConsecutiveAxles ?tsiCompliantMaxDistConsecutiveAxles .
+  ?trainDetectionSystem era:tsiCompliantMaxImpedanceWheelset ?tsiCompliantMaxImpedanceWheelset .
+  ?trainDetectionSystem era:tsiCompliantMetalFreeSpace ?tsiCompliantMetalFreeSpace .
+  ?trainDetectionSystem era:tsiCompliantMetalConstruction ?tsiCompliantMetalConstruction .
+  ?trainDetectionSystem era:tsiCompliantRSTShuntImpedance ?tsiCompliantRSTShuntImpedance .
+  ?trainDetectionSystem era:tsiCompliantShuntDevices ?tsiCompliantShuntDevices .
+  ?trainDetectionSystem era:tsiCompliantCompositeBrakeBlocks ?tsiCompliantCompositeBrakeBlocks .
+  ?trainDetectionSystem era:tsiCompliantSanding ?tsiCompliantSanding .
+  ?trainDetectionSystem era:tdsMinAxleLoadVehicleCategory ?tdsMinAxleLoadVehicleCategory .
+  ?trainDetectionSystem era:trainDetectionSystemSpecificCheck ?trainDetectionSystemSpecificCheck .
+}
+WHERE { 
+  ?track a era:Track.
+  ?obj era:track ?track.
+  ?obj era:inCountry ctry:@@COUNTRY@@ .
+  OPTIONAL { 
+  ?track era:contactLineSystem ?contactLineSystem . 
+  OPTIONAL { ?contactLineSystem era:conditionsAppliedRegenerativeBraking ?conditionsAppliedRegenerativeBraking . }
+  OPTIONAL { ?contactLineSystem era:currentLimitationRequired ?currentLimitationRequired . }
+  OPTIONAL { ?contactLineSystem era:energySupplySystemTSICompliant ?energySupplySystemTSICompliant . }
+  OPTIONAL { ?contactLineSystem era:maxTrainCurrent ?maxTrainCurrent . }
+  OPTIONAL { ?contactLineSystem era:permissionChargingElectricEnergyTractionStandstill ?permissionChargingElectricEnergyTractionStandstill . }
+  OPTIONAL { ?contactLineSystem era:conditionalRegenerativeBrake ?conditionalRegenerativeBrake . }
+  OPTIONAL { ?contactLineSystem era:conditionsChargingElectricEnergyStorage ?conditionsChargingElectricEnergyStorage . }
+  OPTIONAL { ?contactLineSystem era:contactLineSystemType ?contactLineSystemType . }
+  OPTIONAL { ?contactLineSystem era:umax2 ?umax2 . }
+  }
+  OPTIONAL { 
+  ?track era:trainDetectionSystem ?trainDetectionSystem . 
+  OPTIONAL { ?trainDetectionSystem era:trainDetectionSystemSpecificCheckDocument ?trainDetectionSystemSpecificCheckDocument . }
+  OPTIONAL { ?trainDetectionSystem era:flangeLubeRules ?flangeLubeRules . }
+  OPTIONAL { ?trainDetectionSystem era:frequencyBandsForDetection ?frequencyBandsForDetection . }
+  OPTIONAL { ?trainDetectionSystem era:maxSandingOutput ?maxSandingOutput . }
+  OPTIONAL { ?trainDetectionSystem era:maxDistEndTrainFirstAxle ?maxDistEndTrainFirstAxle . }
+  OPTIONAL { ?trainDetectionSystem era:maximumInterferenceCurrent ?maximumInterferenceCurrent . }
+  OPTIONAL { ?trainDetectionSystem era:tdsMaximumMagneticField ?tdsMaximumMagneticField . }
+  OPTIONAL { ?trainDetectionSystem era:requiredSandingOverride ?requiredSandingOverride . }
+  OPTIONAL { ?trainDetectionSystem era:frenchTrainDetectionSystemLimitation ?frenchTrainDetectionSystemLimitation . }
+  OPTIONAL { ?trainDetectionSystem era:tdsFrenchTrainDetectionSystemLimitation ?tdsFrenchTrainDetectionSystemLimitation . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantSandCharacteristics ?tsiCompliantSandCharacteristics . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantFerromagneticWheel ?tsiCompliantFerromagneticWheel . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantMaxDistConsecutiveAxles ?tsiCompliantMaxDistConsecutiveAxles . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantMaxImpedanceWheelset ?tsiCompliantMaxImpedanceWheelset . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantMetalFreeSpace ?tsiCompliantMetalFreeSpace . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantMetalConstruction ?tsiCompliantMetalConstruction . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantRSTShuntImpedance ?tsiCompliantRSTShuntImpedance . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantShuntDevices ?tsiCompliantShuntDevices . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantCompositeBrakeBlocks ?tsiCompliantCompositeBrakeBlocks . }
+  OPTIONAL { ?trainDetectionSystem era:tsiCompliantSanding ?tsiCompliantSanding . }
+  OPTIONAL { ?trainDetectionSystem era:tdsMinAxleLoadVehicleCategory ?tdsMinAxleLoadVehicleCategory . }
+  OPTIONAL { ?trainDetectionSystem era:trainDetectionSystemSpecificCheck ?trainDetectionSystemSpecificCheck . }
+  }
+}

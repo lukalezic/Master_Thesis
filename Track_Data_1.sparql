@@ -81,7 +81,7 @@ CONSTRUCT{
 WHERE {
   ?track a era:Track.
   ?obj era:track ?track.
-  ?obj era:inCountry ctry:LUX.
+  ?obj era:inCountry ctry:@@COUNTRY@@.
   OPTIONAL { ?track era:maximumTrainDeceleration ?maximumTrainDeceleration . }
   OPTIONAL { ?track era:contactStripMaterial ?contactStripMaterial . }
   OPTIONAL { ?track era:hotAxleBoxDetectorLocation ?hotAxleBoxDetectorLocation . }

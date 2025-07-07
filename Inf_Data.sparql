@@ -84,7 +84,7 @@ CONSTRUCT {
 WHERE {
   ?infrastructureObject a ?type .
   ?type rdfs:subClassOf* era:InfrastructureObject .
-  ?infrastructureObject era:inCountry ctry:LUX .
+  ?infrastructureObject era:inCountry ctry:@@COUNTRY@@ .
   OPTIONAL { ?infrastructureObject era:hasAbstraction ?abstraction . }
   OPTIONAL { ?infrastructureObject era:imCode ?im . }
   OPTIONAL { ?infrastructureObject era:lineReference ?lineReference . }
