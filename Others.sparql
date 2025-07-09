@@ -5,7 +5,7 @@ PREFIX ctry: <http://publications.europa.eu/resource/authority/country/>
 
 CONSTRUCT{
   ?track era:contactLineSystem ?contactLineSystem .
-  ?contactLineSystem a era:ContactLineSystem.
+  ?contactLineSystem a ?contactLineSystemRDF .
   ?contactLineSystem era:conditionsAppliedRegenerativeBraking ?conditionsAppliedRegenerativeBraking .
   ?contactLineSystem era:currentLimitationRequired ?currentLimitationRequired .
   ?contactLineSystem era:energySupplySystemTSICompliant ?energySupplySystemTSICompliant .
@@ -16,7 +16,7 @@ CONSTRUCT{
   ?contactLineSystem era:contactLineSystemType ?contactLineSystemType .
   ?contactLineSystem era:umax2 ?umax2 .
   ?track era:trainDetectionSystem ?trainDetectionSystem .
-  ?trainDetectionSystem a era:TrainDetectionSystem.
+  ?trainDetectionSystem a ?trainDetectionSystemType .
   ?trainDetectionSystem era:trainDetectionSystemSpecificCheckDocument ?trainDetectionSystemSpecificCheckDocument .
   ?trainDetectionSystem era:flangeLubeRules ?flangeLubeRules .
   ?trainDetectionSystem era:frequencyBandsForDetection ?frequencyBandsForDetection .
@@ -46,6 +46,7 @@ WHERE {
   ?obj era:inCountry ctry:@@COUNTRY@@ .
   OPTIONAL { 
   ?track era:contactLineSystem ?contactLineSystem . 
+  ?contactLineSystem a ?contactLineSystemRDF . 
   OPTIONAL { ?contactLineSystem era:conditionsAppliedRegenerativeBraking ?conditionsAppliedRegenerativeBraking . }
   OPTIONAL { ?contactLineSystem era:currentLimitationRequired ?currentLimitationRequired . }
   OPTIONAL { ?contactLineSystem era:energySupplySystemTSICompliant ?energySupplySystemTSICompliant . }
@@ -58,6 +59,7 @@ WHERE {
   }
   OPTIONAL { 
   ?track era:trainDetectionSystem ?trainDetectionSystem . 
+  ?trainDetectionSystem a ?trainDetectionSystemType
   OPTIONAL { ?trainDetectionSystem era:trainDetectionSystemSpecificCheckDocument ?trainDetectionSystemSpecificCheckDocument . }
   OPTIONAL { ?trainDetectionSystem era:flangeLubeRules ?flangeLubeRules . }
   OPTIONAL { ?trainDetectionSystem era:frequencyBandsForDetection ?frequencyBandsForDetection . }

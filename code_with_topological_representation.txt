@@ -5,7 +5,17 @@ PREFIX ctry: <http://publications.europa.eu/resource/authority/country/>
 
 CONSTRUCT {
   ?infrastructureObject a ?type .
-  #?infrastructureObject era:hasAbstraction ?abstraction .
+  ?infrastructureObject era:hasAbstraction ?abstraction .
+  ?abstraction a ?abstractionType . 
+  ?abstraction era:elementPart ?elementPart .
+  ?elementPart a ?elementPartType.
+  ?elementPart era:elementPart ?elementPartReflexive . 
+  ?elementPart era:endIntrinsicCoordinate ?endIntrinsicCoordinateReflexive . 
+  ?elementPart era:hasImplementation ?hasImplementationReflexive . 
+  ?elementPart era:startIntrinsicCoordinate ?startIntrinsicCoordinateReflexive . 
+  ?abstraction era:endIntrinsicCoordinate ?endIntrinsicCoordinate .
+  ?abstraction era:hasImplementation ?hasImplementation .
+  ?abstraction era:startIntrinsicCoordinate ?startIntrinsicCoordinate .
   ?infrastructureObject era:imCode ?im .
   ?infrastructureObject era:lineReference ?lineReference .
   ?infrastructureObject era:validityEndDate ?valEndDate .
@@ -85,7 +95,20 @@ WHERE {
   ?infrastructureObject a ?type .
   ?type rdfs:subClassOf* era:InfrastructureObject .
   ?infrastructureObject era:inCountry ctry:@@COUNTRY@@ .
-  #OPTIONAL { ?infrastructureObject era:hasAbstraction ?abstraction . }
+  OPTIONAL { ?infrastructureObject era:hasAbstraction ?abstraction . 
+  #NetElement
+  ?abstraction a ?abstractionType.
+  OPTIONAL { ?abstraction era:elementPart ?elementPart . 
+  ?elementPart a ?elementPartType.
+  OPTIONAL { ?elementPart era:elementPart ?elementPartReflexive . }
+  OPTIONAL { ?elementPart era:endIntrinsicCoordinate ?endIntrinsicCoordinateReflexive . }
+  OPTIONAL { ?elementPart era:hasImplementation ?hasImplementationReflexive . }
+  OPTIONAL { ?elementPart era:startIntrinsicCoordinate ?startIntrinsicCoordinateReflexive . }
+  }
+  OPTIONAL { ?abstraction era:endIntrinsicCoordinate ?endIntrinsicCoordinate . }
+  OPTIONAL { ?abstraction era:hasImplementation ?hasImplementation . }
+  OPTIONAL { ?abstraction era:startIntrinsicCoordinate ?startIntrinsicCoordinate . }
+  }
   OPTIONAL { ?infrastructureObject era:imCode ?im . }
   OPTIONAL { ?infrastructureObject era:lineReference ?lineReference . }
   OPTIONAL { ?infrastructureObject era:canonicalURI ?canonicalURI . }
@@ -148,7 +171,7 @@ WHERE {
   }
   #Siding
   OPTIONAL { ?infrastructureObject era:siding ?siding . 
-	?siding a ?sidingType . 
+    ?siding a ?sidingType.
     OPTIONAL { ?siding era:hasElectricShoreSupply ?hasElectricShoreSupply . }
     OPTIONAL { ?siding era:hasExternalCleaning ?hasExternalCleaning . }
     OPTIONAL { ?siding era:hasRefuelling ?hasRefuelling . }
