@@ -1,0 +1,92 @@
+=== RDF Graph Statistics ===
+
+entity_count:
+  6854
+
+relation_count:
+  168
+
+node_count:
+  6854
+
+edge_count:
+  45281
+
+graph_density:
+  0.000964031394879616
+
+global_clustering_coefficient:
+  0.010023142001752238
+
+relation_type_count:
+  168
+
+degree_distribution_index:
+  2.8951976781849793
+
+relation_type_index:
+  3.5632616429202106
+
+strongly_connected_components:
+  6854
+
+top_10_highest_degree_concept_nodes:
+  ('http://data.europa.eu/949/concepts/tsi-compliances/rinf/10', 1097)
+  ('http://data.europa.eu/949/RaisedPantographsDistanceAndSpeed', 477)
+  ('http://data.europa.eu/949/maxImpedanceWheelset', 446)
+  ('http://data.europa.eu/949/tsiCompliantSandCharacteristics', 446)
+  ('http://data.europa.eu/949/maxDistConsecutiveAxles', 446)
+  ('http://data.europa.eu/949/TrainDetectionSystem', 446)
+  ('http://data.europa.eu/949/frenchTrainDetectionSystemLimitation', 446)
+  ('http://data.europa.eu/949/documents/caa79dd3c121d79fc97b4c72e58027520dca7a80', 326)
+  ('http://data.europa.eu/949/Track', 322)
+  ('http://data.europa.eu/949/demonstrationINF', 322)
+
+top_10_most_frequent_relations:
+  ('http://data.europa.eu/949/notApplicable', 13154)
+  ('http://www.w3.org/2000/01/rdf-schema#label', 3321)
+  ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 2741)
+  ('http://data.europa.eu/949/minAxleLoadVehicleCategory', 948)
+  ('http://data.europa.eu/949/gsmROptionalFunctions', 808)
+  ('http://data.europa.eu/949/gaugingProfile', 766)
+  ('http://data.europa.eu/949/hashSource', 719)
+  ('http://data.europa.eu/949/canonicalURI', 717)
+  ('http://data.europa.eu/949/gsmrNetworkCoverage', 648)
+  ('http://data.europa.eu/949/minAxleLoad', 634)
+
+top_10_object_properties:
+  ('http://data.europa.eu/949/notApplicable', 13154)
+  ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 2741)
+  ('http://data.europa.eu/949/minAxleLoadVehicleCategory', 948)
+  ('http://data.europa.eu/949/gsmROptionalFunctions', 808)
+  ('http://data.europa.eu/949/gaugingProfile', 766)
+  ('http://data.europa.eu/949/canonicalURI', 717)
+  ('http://data.europa.eu/949/gsmrNetworkCoverage', 648)
+  ('http://data.europa.eu/949/lineCategory', 509)
+  ('http://data.europa.eu/949/trackRaisedPantographsDistanceAndSpeed', 477)
+  ('http://data.europa.eu/949/trainDetectionSystem', 446)
+
+top_10_node_relation_cofreq:
+  ('http://data.europa.eu/949/RaisedPantographsDistanceAndSpeed', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 477)
+  ('4', 'http://data.europa.eu/949/raisedPantographsNumber', 477)
+  ('0082', 'http://data.europa.eu/949/imCode', 460)
+  ('http://data.europa.eu/949/maxImpedanceWheelset', 'http://data.europa.eu/949/notApplicable', 446)
+  ('http://data.europa.eu/949/tsiCompliantSandCharacteristics', 'http://data.europa.eu/949/notApplicable', 446)
+  ('http://data.europa.eu/949/maxDistConsecutiveAxles', 'http://data.europa.eu/949/notApplicable', 446)
+  ('http://data.europa.eu/949/TrainDetectionSystem', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 446)
+  ('http://data.europa.eu/949/frenchTrainDetectionSystemLimitation', 'http://data.europa.eu/949/notApplicable', 446)
+  ('http://data.europa.eu/949/Track', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 322)
+  ('http://data.europa.eu/949/demonstrationINF', 'http://data.europa.eu/949/notApplicable', 322)
+
+top_10_node_node_cofreq:
+  (('http://data.europa.eu/949/functionalInfrastructure/tracks/be8d9eb61fca6ce3341c7bd5ca7a863e63f97260', 'false'), 15)
+  (('false', 'http://data.europa.eu/949/functionalInfrastructure/tracks/be8d9eb61fca6ce3341c7bd5ca7a863e63f97260'), 15)
+  (('http://data.europa.eu/949/functionalInfrastructure/tracks/305ff0edf877c4bce992c3fc9453b931ad27bd65', 'false'), 15)
+  (('false', 'http://data.europa.eu/949/functionalInfrastructure/tracks/305ff0edf877c4bce992c3fc9453b931ad27bd65'), 15)
+  (('http://data.europa.eu/949/functionalInfrastructure/tracks/a5315e797e552380fc6c05e02bef96be91115d03', 'false'), 15)
+  (('false', 'http://data.europa.eu/949/functionalInfrastructure/tracks/a5315e797e552380fc6c05e02bef96be91115d03'), 15)
+  (('http://data.europa.eu/949/functionalInfrastructure/tracks/651cb20b91223dab792fc9b6afc2f26e2c8fe209', 'false'), 15)
+  (('false', 'http://data.europa.eu/949/functionalInfrastructure/tracks/651cb20b91223dab792fc9b6afc2f26e2c8fe209'), 15)
+  (('http://data.europa.eu/949/functionalInfrastructure/tracks/dbb07fa2483fde8824cf30fe154ad0c89d659672', 'false'), 15)
+  (('false', 'http://data.europa.eu/949/functionalInfrastructure/tracks/dbb07fa2483fde8824cf30fe154ad0c89d659672'), 15)
+

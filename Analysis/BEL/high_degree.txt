@@ -1,0 +1,106 @@
++100
+-25
+0
+0.00072*V^2 + 90 N < F m < 0,00097*v^2 + 110 N
+0088
+130
+133
+150
+2
+2 35 00
+2 8 130
+2.5
+20.0
+200.0
+2017-11-17
+2078-12-31
+2400
+27.5
+300
+3000
+35
+36.0
+4.8
+40
+4200
+5.0
+5.0 at least 3,5 t for vehicles with more than 4 axles and wheel tread brakes
+5.0 at least 4 t for vehicles with 4 axles and wheel tread brakes
+5.0 at least 5 t for other vehicles (that is, vehicles that do not fall into categories 1 or 2)
+6.0
+630
+700
+8
+999
+Overhead contact line (OCL)
+false
+http://data.europa.eu/949/ContactLineSystem
+http://data.europa.eu/949/ETCSLevel
+http://data.europa.eu/949/LineReference
+http://data.europa.eu/949/LoadCapability
+http://data.europa.eu/949/MinAxleLoadVehicleCategory
+http://data.europa.eu/949/PlatformEdge
+http://data.europa.eu/949/RaisedPantographsDistanceAndSpeed
+http://data.europa.eu/949/Track
+http://data.europa.eu/949/TrainDetectionSystem
+http://data.europa.eu/949/Tunnel
+http://data.europa.eu/949/compatibilityProcedureDocument
+http://data.europa.eu/949/concepts/compliant-pantograph-heads/rinf/10
+http://data.europa.eu/949/concepts/compliant-pantograph-heads/rinf/20
+http://data.europa.eu/949/concepts/contact-line-systems/rinf/10
+http://data.europa.eu/949/concepts/contact-strip-materials/rinf/20
+http://data.europa.eu/949/concepts/contact-strip-materials/rinf/50
+http://data.europa.eu/949/concepts/contact-strip-materials/rinf/70
+http://data.europa.eu/949/concepts/eddy-current-braking/rinf/50
+http://data.europa.eu/949/concepts/energy-supply-systems/rinf/DC30
+http://data.europa.eu/949/concepts/etcs-baselines/rinf/20
+http://data.europa.eu/949/concepts/etcs-m-versions/rinf/10
+http://data.europa.eu/949/concepts/gaugings/rinf/100
+http://data.europa.eu/949/concepts/gsmr-networks/rinf/30
+http://data.europa.eu/949/concepts/gsmr-optional-functions/rinf/10
+http://data.europa.eu/949/concepts/gsmr-versions/rinf/30
+http://data.europa.eu/949/concepts/line-category/rinf/100
+http://data.europa.eu/949/concepts/line-category/rinf/40
+http://data.europa.eu/949/concepts/load-capability-line-categories/rinf/90
+http://data.europa.eu/949/concepts/magnetic-braking/rinf/40
+http://data.europa.eu/949/concepts/min-axle-load-vehicle-categories/rinf/40
+http://data.europa.eu/949/concepts/min-axle-load-vehicle-categories/rinf/50
+http://data.europa.eu/949/concepts/min-axle-load-vehicle-categories/rinf/60
+http://data.europa.eu/949/concepts/nominal-track-gauges/rinf/30
+http://data.europa.eu/949/concepts/other-pantograph-heads/rinf/10
+http://data.europa.eu/949/concepts/other-pantograph-heads/rinf/40
+http://data.europa.eu/949/concepts/other-pantograph-heads/rinf/50
+http://data.europa.eu/949/concepts/other-pantograph-heads/rinf/60
+http://data.europa.eu/949/concepts/profile-num-semi-trailers/rinf/210
+http://data.europa.eu/949/concepts/profile-num-semi-trailers/rinf/90
+http://data.europa.eu/949/concepts/profile-num-swap-bodies/rinf/210
+http://data.europa.eu/949/concepts/profile-num-swap-bodies/rinf/90
+http://data.europa.eu/949/concepts/rail-inclinations/rinf/20
+http://data.europa.eu/949/concepts/temperature-ranges/rinf/10
+http://data.europa.eu/949/concepts/ten-classifications/rinf/40
+http://data.europa.eu/949/concepts/train-detection/rinf/10
+http://data.europa.eu/949/concepts/train-detection/rinf/20
+http://data.europa.eu/949/concepts/train-protection-legacy-systems/rinf/47
+http://data.europa.eu/949/concepts/tsi-compliances/rinf/10
+http://data.europa.eu/949/concepts/tsi-compliances/rinf/20
+http://data.europa.eu/949/concepts/tsi-existence-and-compliances/rinf/20
+http://data.europa.eu/949/distSignToPhaseEnd
+http://data.europa.eu/949/freightCorridor
+http://data.europa.eu/949/hotAxleBoxDetectorGeneration
+http://data.europa.eu/949/hotAxleBoxDetectorIdentification
+http://data.europa.eu/949/hotAxleBoxDetectorLocation
+http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant
+http://data.europa.eu/949/legacyRadioSystem
+http://data.europa.eu/949/maxDistConsecutiveAxles
+http://data.europa.eu/949/maxImpedanceWheelset
+http://data.europa.eu/949/nationalLoadCapability
+http://data.europa.eu/949/publicNetworkRoamingDetails
+http://data.europa.eu/949/structureCheckLocation
+http://data.europa.eu/949/switchRadioSystem
+http://data.europa.eu/949/tsiCompliantMetalConstruction
+http://data.europa.eu/949/umax2
+http://publications.europa.eu/resource/authority/country/BEL
+none
+track circuit
+true
+wheel detector
